@@ -53,7 +53,7 @@ public:
                 cou << "Queue underflow\n";
                 return;
             }
-            cout << "\nhe element deleted from the queue is: " << queue_array[FRONT] << "\n";
+            cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
 
             // cek jika antrian hanya memiliki satu elemen
             if (FRONT == REAR)
@@ -76,6 +76,15 @@ public:
                 int FRONT_Position = FRONT;
                 int REAR_Position = REAR;
 
+                // cek apakah antrian kosong
+                if (FRONT_Position == -1)
+                {
+                    cout << "Queue is empty\n";
+                    return;
+                } 
+
+
+                
                 
             }
 
